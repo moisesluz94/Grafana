@@ -24,14 +24,9 @@ Templates Personalizados: Dashboards pré-configurados e templates que podem ser
 - Como Contribuir
 
 Estamos entusiasmados com a possibilidade de receber suas contribuições! Siga estes passos para compartilhar seu conhecimento:
-
-
-- Fork do Repositório: Faça um fork deste repositório para sua própria conta no GitHub.
-
-
-- Crie sua Contribuição: Adicione seus templates, dashboards ou outros recursos seguindo as diretrizes de estrutura e organização fornecidas no Guia de Contribuição.
-
-E- nvie um Pull Request: Abra um pull request explicando suas mudanças e fornecendo informações relevantes sobre suas contribuições.
+1: Fork do Repositório: Faça um fork deste repositório para sua própria conta no GitHub.
+2: Crie sua Contribuição: Adicione seus templates, dashboards ou outros recursos seguindo as diretrizes de estrutura e organização fornecidas no Guia de Contribuição.
+3: E- nvie um Pull Request: Abra um pull request explicando suas mudanças e fornecendo informações relevantes sobre suas contribuições.
 
 
 - Como Usar
