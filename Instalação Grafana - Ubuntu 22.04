@@ -1,0 +1,44 @@
+Instalar a partir do Repositório APT
+Se instalar a partir do repositório APT, o Grafana será atualizado automaticamente quando você executar apt-get update.
+
+1. Instalar pacotes pré-requisitos:
+# sudo apt-get install -y apt-transport-https software-properties-common wget
+
+2. Importar a chave GPG:
+# sudo mkdir -p /etc/apt/keyrings/
+# wget -q -O - https://apt.grafana.com/gpg.key | gpg --dearmor | sudo tee /etc/apt/keyrings/grafana.gpg > /dev/null
+
+3. Adicionar o repositório para versões estáveis ou beta:
+Para versões estáveis:
+# echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+
+Para versões beta:
+# echo "deb [signed-by=/etc/apt/keyrings/grafana.gpg] https://apt.grafana.com beta main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+
+4. Atualizar a lista de pacotes disponíveis:
+# sudo apt-get update
+
+5. Instalar Grafana OSS (Código Aberto) ou Grafana Enterprise:
+Para Grafana OSS:
+# sudo apt-get install grafana
+
+Para Grafana Enterprise:
+# sudo apt-get install grafana-enterprise
+
+##################### Instalar o Grafana usando um pacote DEB ou como um binário independente ##################### 
+Se optar por não instalar o Grafana usando o APT, você pode baixar e instalar o Grafana usando o pacote DEB ou como um binário independente.
+1. Acesse a página de downloads do Grafana e escolha a versão desejada.
+2. Selecione a Edição (Enterprise ou Código Aberto) e clique na aba Linux ou ARM, dependendo do seu sistema.
+3. Copie e cole o código da página de download no seu terminal e execute.
+Desinstalar no Debian ou Ubuntu
+Execute os seguintes comandos em um terminal para desinstalar o Grafana:
+Se configurou o Grafana para rodar com o systemd:
+# sudo systemctl stop grafana-server
+# sudo apt-get remove grafana
+
+Se configurou o Grafana para rodar com o init.d:
+# sudo service grafana-server stop
+# sudo apt-get remove grafana
+
+Opcional: para remover o repositório do Grafana:
+# sudo rm -i /etc/apt/sources.list.d/grafana.list
