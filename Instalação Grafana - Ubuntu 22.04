@@ -28,6 +28,8 @@ Para Grafana Enterprise:
 ##################### Instalar o Grafana usando um pacote DEB ou como um binário independente ##################### 
 Se optar por não instalar o Grafana usando o APT, você pode baixar e instalar o Grafana usando o pacote DEB ou como um binário independente.
 1. Acesse a página de downloads do Grafana e escolha a versão desejada.
+
+Link: https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
 2. Selecione a Edição (Enterprise ou Código Aberto) e clique na aba Linux ou ARM, dependendo do seu sistema.
 3. Copie e cole o código da página de download no seu terminal e execute.
 Desinstalar no Debian ou Ubuntu
